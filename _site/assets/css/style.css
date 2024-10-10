@@ -148,7 +148,7 @@ body { font-family: "Poppins", sans-serif; }
 .navbar-brand { margin-bottom: -14px; }
 .navbar-brand::after { margin-top: -0.25em; }
 
-.project.card { border-radius: 15px; text-decoration: none !important; margin: 10px auto; transition: transform 400ms; }
+.project.card { border-radius: 15px; text-decoration: none !important; margin: 10px auto; transition: transform 400ms; pointer-events: none; }
 .project.card .card-img-top { border-radius: 15px 15px 0 0; }
 .project.card:hover:not(.post) { transform: translateY(-8px); box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24); }
 
