@@ -1,11 +1,10 @@
 
-- title: Research Intern, MILA Quebec-AI Institute
-  from: September 2022
+- title: Software Engineer, Palo Alto Networks
+  from: August 2023
   to: Present
-  description: <ul><li>Designing generative flow networks so as to jointly generate DNA sequences as well as the fidelity (precision level
-                of the approximate estimation of energy of the sequence) of the oracle to evaluate the sequence.</li>
-              <li>I am working under <a href = "https://alexhernandezgarcia.github.io/">Alex Hernandez-Garcia</a>, in <a href = "https://yoshuabengio.org/">Yoshua Bengio</a>'s group.</li></ul>
-
+  description:<ul><li>Worked on various routing protocols such as OSPF, BGP, RIP as a part of Next Gen Firewall Team.
+              <li>Developed a critical upgrade script using C to prevent failure of customer’s firewall while upgrading.
+              <li>Worked extensively with GDB to debug core files generated during a crash. 
 - title: Software Engineering Intern, Bloomberg India
   from: May 2022
   to: July 2022
