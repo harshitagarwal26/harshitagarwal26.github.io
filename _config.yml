@@ -1,5 +1,5 @@
 ### Site Settings ###
-title               : nikita saxena
+title               : harshit agarwal
 description         : >-
                       I am like the female version of Chandler with the OCD of Monica.
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
@@ -22,17 +22,17 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : Nikita Saxena
+  name              : Harshit Agarwal
   image             : /assets/img/me.jpg
 #  behance           : your_username
 # dribbble          : your_username
-  email             : nikitasaxena0209@gmail.com
+  email             : harshitagarwal82@gmail.com
 #  facebook          : your_username
-  github            : nikita-0209
+  github            : harshitagarwal26
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
-  linkedin          : nikita-saxena
+  linkedin          : harshit-agarwal
 #  medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
