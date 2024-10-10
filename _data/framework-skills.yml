@@ -6,10 +6,10 @@
   percentage: 35
   color: success
 
-- name: Linux
+- name: Apache Kafka
   percentage: 20
   color: info
 
 - name: Version Control GitHub
-  percentage: 35
+  percentage: 50
   color: success

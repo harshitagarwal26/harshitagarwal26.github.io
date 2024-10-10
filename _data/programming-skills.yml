@@ -2,11 +2,11 @@
   percentage: 65
   color: danger
 
-- name: C++
+- name: C/C++
   percentage: 65
   color: info
 
-- name: MATLAB
+- name: GoLang
   percentage: 25
   color: light
 
