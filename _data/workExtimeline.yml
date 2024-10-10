@@ -1,0 +1,51 @@
+
+- title: Research Intern, MILA Quebec-AI Institute
+  from: September 2022
+  to: Present
+  description: <ul><li>Designing generative flow networks so as to jointly generate DNA sequences as well as the fidelity (precision level
+                of the approximate estimation of energy of the sequence) of the oracle to evaluate the sequence.</li>
+              <li>I am working under <a href = "https://alexhernandezgarcia.github.io/">Alex Hernandez-Garcia</a>, in <a href = "https://yoshuabengio.org/">Yoshua Bengio</a>'s group.</li></ul>
+
+- title: Software Engineering Intern, Bloomberg India
+  from: May 2022
+  to: July 2022
+  description: <ul><li>Designed a C++ infrastructure to provide clients with transparency on the corporate actions that have impacted their securities.</li>
+              <li>Integrated the service with database accessor and reporting framework APIs.</li>
+              <li>Designed the UI and monitoring dashboard on Humio for the service. Deployed the service on Beta platforms.</li></ul>
+
+- title: Junior Investigator, Tufts University
+  from: May 2021
+  to: September 2021
+  description: <ul><li>Worked with the Tufts Neutrino Group, under <a href="https://as.tufts.edu/physics/people/faculty/wongjirad"> Dr. Taritree Wongjirad</a> on the MicroBoone experiment.</li>
+              <li>Designed a generative network to simulate neutrino events conditioned on the particle’s momentum.</li>
+              <li>I'm also a junior investigator at <a href = "https://iaifi.org/people.html"> IAIFI.</a> </li></ul>
+
+- title: Research Intern, Space Applications Center, ISRO
+  from: May 2020
+  to: Sep 2020
+  description: <ul><li>Implemented Single Image Super Resolution Convolution Neural Networks to downsample Sea Surface Temperature (SST) fields of Bay of
+                Bengal from a spatial resolution of 15 km to 5km and 5km to 1km. </li> </ul>
+
+- title: ML Software Engineer, CureSkin.ai
+  from: Jul 2020
+  to: Aug 2020
+  description: <ul> <li>Built a pipeline capable of detecting six classes of wrinkles on human faces irrespective of their age, gender or face tone. </li>
+                <li>Experimented with image processing techniques like Binarization, Gaussian Filter and Hessian Line Tracking in order to highlight them.</li>
+                <li>Certain wrinkles (like those around the eyes) are more common than others. I selected the RetinaNet architecture to tackle the imbalanced dataset.</li>
+                <li>The pipeline achieved a Mean Average Precision (maP) of 0.5. It was deployed on the <a href="https://cureskin.com/">CureSkin</a> application, with over a million downloads.</li></ul>
+
+
+- title: ML Software Engineer, Couture.ai
+  from: Jul 2020
+  to: Aug 2020
+  description: <ul> <li>Developed a service for JioLiv, and devised an intelligent algorithm based on structural similarity index to filter out non-redundant movie frames.</li>
+                <li>Implemented a Tensorflow-based text detection and recognition pipeline to read words off the movie frames.</li>
+                <li>Subsequently, I formulated a logic using spaCy and TextRank to extract contextually significant phrases (single-worded or multi-worded) from the generated text.</li></ul>
+
+- title: ML Software Engineer, Xplorazzi Technologies
+  from: Apr 2020
+  to: May 2020
+  description: <ul> <li>Built a pipeline to detect price tags from images of supermarket shelves and interpret prices from them.</li>
+              <li>To detect minuscule price tags, the Single Shot Object Detector based on Feature Pyramid Network was implemented.</li>
+              <li>A YOLO-based Multi-Digit Classifier was trained to read digits off the price tags.</li>
+              <li>The entire pipeline achieved a Mean Average Precision (mAP) of 0.6, and is being deployed by Xplorazzi Technologies. <a href="https://medium.com/swlh/price-tag-detector-multi-digit-classification-using-tensorflow-object-detection-and-svhn-38506705bcf2">[View Details]</a> </li></ul>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Multi-Relational Graph Neural Network for Darkweb Actor Classification">
+  <meta property="og:description" content="I propose a semi-supervised deep learning framework to detect key actors by classifying underground forum users into different groups based on their activity...">
+
+  <title>Multi-Relational Graph Neural Network for Darkweb Actor Classification</title>
+  <meta name="description" content="I propose a semi-supervised deep learning framework to detect key actors by classifying underground forum users into different groups based on their activity...">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>nikita saxena</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/documentation/docs"></a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/workex/">Work Ex</a>
+
+      <a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Extra-Curricular</a>
+
+      <a class="nav-item nav-link " href="/honors/">Honors</a>
+
+      <a class="nav-item nav-link " href="https://drive.google.com/file/d/1-cBqHxyJRVtevimRIAlHsKVC2dItbZF4/view?usp=sharing">Resume</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="name-multi-relational-graph-neural-network-for-darkweb-actor-classification">name: Multi-Relational Graph Neural Network for Darkweb Actor Classification</h1>
+<h5 id="supervisor--dr-vinti-agarwal">Supervisor: <a href="https://www.bits-pilani.ac.in/pilani/vintiagarwal/profile"> Dr. Vinti Agarwal</a></h5>
+
+<p><br />
+Cybercriminals who interact extensively
+on underground forums, often, exchange illegal commodities and indulge in discussions on unwarranted
+topics. To facilitate the disruption of these highly
+proficient criminals, we propose a deep learning based
+multi-relational graph convolutional network approach
+to analyse the underground forum and identify key
+actors.</p>
+
+<figure class="figure w-100">
+  <img src="/assets/img/mrgcn.png" class="figure-img img-fluid rounded" alt="Overall architecture of KAD-mRGCN framework" /><figcaption class="figure-caption text-center">Overall architecture of KAD-mRGCN framework</figcaption></figure>
+
+<p>We demonstrate the effectiveness of the proposed model on a neo-nazi underground forum, IronMarch. &lt;/p&gt;
+  We first modeled the hackforum into a homogeneous graph of users, where the multiple edges between users are captured based on their involvement in private conversations, group discussions and other miscellaneous activities. 
+  In addition, we also encode the textual content shared among users’ in form of distributed feature representation generated from BERT.
+  To obtain ground truth labels for training data, we propose a hypothesis to calculate the scores for each user based on the quality and quantity of their involvement in the underground forum. 
+  The proposed framework jointly embeds the users’ and multi relational information to learn the nodes embeddings in the graph. 
+  We demonstrate the effectiveness of the proposed model on a neo-nazi underground forum, IronMarch.</p>
+
+<p><br /></p>
+
+<h3 id="technical-details">Technical Details</h3>
+<ul>
+<li>Language: Python</li>
+<li>Semi-Supervised Learning </li>
+<li>BERT for Language Modeling</li>
+<li>Framework: Keras and Tensorflow</li>
+<li>Model: Graph Convolutional Layer</li>
+<li>Loss Function: Mean Squared Error</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="results">Results</h3>
+<p>We conducted an ablation study on the model
+  parameters to generate the best results and achieved
+  a classification accuracy of 82% which validates the
+  proposed hypothesis for score computation and class
+  labelling. To establish the robustness of our model, we
+  compare its performance against state-of-art models.
+  Though we used an underground forum as a showcase,
+  the proposed model can be implemented to identify
+  influential users’ on other social media platforms.</p>
+
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/nikita-0209/kad_mrgcn_public">
+  View Code
+</a>
+
+</p>
+
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://ieeexplore.ieee.org/document/9671446">
+  View Paper
+</a>
+
+</p>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Nikita Saxena</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:nikitasaxena0209@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/nikita-0209"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/nikita-saxena"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/nikitasaxena02"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+  
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

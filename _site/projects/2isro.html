@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Super Resolution CNN for Sea Surface Temperature">
+  <meta property="og:description" content="High-resolution measurements of sea surface temperature (SST) are crucial to climate and ocean state forecasting. However, on cloudy days, satellites can onl...">
+
+  <title>Super Resolution CNN for Sea Surface Temperature</title>
+  <meta name="description" content="High-resolution measurements of sea surface temperature (SST) are crucial to climate and ocean state forecasting. However, on cloudy days, satellites can onl...">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>nikita saxena</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/documentation/docs"></a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/workex/">Work Ex</a>
+
+      <a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Extra-Curricular</a>
+
+      <a class="nav-item nav-link " href="/honors/">Honors</a>
+
+      <a class="nav-item nav-link " href="https://drive.google.com/file/d/1-cBqHxyJRVtevimRIAlHsKVC2dItbZF4/view?usp=sharing">Resume</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="super-resolution-cnn-for-oceanographic-data">Super Resolution CNN for Oceanographic Data</h1>
+<h5 id="supervisor--dr-neeraj-agarwal">Supervisor: <a href="https://scholar.google.com/citations?user=NMTJ718AAAAJ&amp;hl=en"> Dr. Neeraj Agarwal</a></h5>
+
+<p>As the name quite evidently conveys, Sea Surface Temperature is the measurement of the temperature of the sea surface. Oh, by surface, I don’t mean legit surface; in fact, it can extend to up to 10m beneath the actual <i>surface</i>!</p>
+
+<p>And why do we need to measure the sea surface temperature?</p>
+
+<p>Well, SST is a strong indicator of global climate change and stress to aquatic life. It also plays a pivotal role in weather and ocean state forecasting. Radiometers (thermal infrared or microwave) in space-borne satellites measure SST.</p>
+
+<figure class="figure w-100">
+  <img src="/assets/img/isro.jpg" class="figure-img img-fluid rounded" alt="Photo by NASA on Unsplash" /><figcaption class="figure-caption text-center">Photo by NASA on Unsplash</figcaption></figure>
+
+<!-- ![preview](/assets/img/isro.jpg) -->
+
+<p>But these satellites aren’t perfect. Though they perform great under clear skies, they cannot record high-resolution measurements on cloudy days.</p>
+
+<p>And that’s where the problem creeps in…</p>
+
+<p>For all the great uses of SST that I just mentioned, there is a prerequisite-the data needs to be of high resolution. However, luckily, with satellites constantly monitoring sea surface temperature, there has been an upsurge in the amount of available SST Fields. And when there is a lot of data, we often think <i>deep learning.</i></p>
+
+<p>In this project, I assessed the efficiency of Convolutional Neural Networks to reconstruct high SR measurements from low SR. My study proved that CNNs could successfully increase the spatial resolution of sea surface temperature observations from 15 km to 1km.</p>
+
+<figure class="figure w-100">
+  <img src="/assets/img/isro2.jpeg" class="figure-img img-fluid rounded" alt="Results" /><figcaption class="figure-caption text-center">Results</figcaption></figure>
+
+<!-- ![preview](/assets/img/isro2.jpeg) -->
+
+<p>In an SST Field, each pixel gives the measurement of temperature at that location. So, it’s usually between a range of 20-40 degrees Celsius. Most of the state-of-the-art super-resolution networks have been trained on 255-bit image data. So, evaluating the same network for SST data (which has a lesser range), was one of the biggest challenges of this project.</p>
+
+<p><br /></p>
+
+<h3 id="technical-details">Technical Details</h3>
+<ul>
+<li>Language: Python</li>
+<li>Library: <a href="https://www.unidata.ucar.edu/software/netcdf/"> NetCDF</a></li>
+<li>API: Keras and Tensorflow</li>
+<li>Model Architecture:
+<ul><li>Layers : Convolutional Layers</li>
+<li>Optimiser: Adam</li>
+<li>Loss Function: Mean Squared Error</li>
+<li> Activation Function: ReLu </li>
+<li>Metric: Peak Signal to Noise Ratio </li> </ul> </li>
+<li>Dataset Size:
+<ul><li>Train: 1800 fields </li>
+<li>Test: 600 fields </li> </ul></li>
+</ul>
+
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/nikita-0209/downscale-sst">
+  View Code
+</a>
+      
+</p>
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://docs.google.com/presentation/d/169SzAYUFLvOWzhyE-tbJCy3iIlB6OBOVi9kdda-m290/present?slide=id.gcb9a0b074_1_140">
+  View Presentation
+</a>
+      
+</p>
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://drive.google.com/file/d/1IAE-T9W7qWpdHEKeVr-rZRE2RLLZ3Lm8/view?usp=sharing">
+  View Report
+</a>
+
+</p>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Nikita Saxena</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:nikitasaxena0209@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/nikita-0209"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/nikita-saxena"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/nikitasaxena02"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+  
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

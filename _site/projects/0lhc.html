@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quark Gluon Classification using Contrastive Learning Representations">
+  <meta property="og:description" content="I trained a transformer-encoder network with contrastive loss to map particle jets to a representation space. I implemented ML models to classify the obtaine...">
+
+  <title>Quark Gluon Classification using Contrastive Learning Representations</title>
+  <meta name="description" content="I trained a transformer-encoder network with contrastive loss to map particle jets to a representation space. I implemented ML models to classify the obtaine...">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>nikita saxena</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/documentation/docs"></a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/workex/">Work Ex</a>
+
+      <a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Extra-Curricular</a>
+
+      <a class="nav-item nav-link " href="/honors/">Honors</a>
+
+      <a class="nav-item nav-link " href="https://drive.google.com/file/d/1-cBqHxyJRVtevimRIAlHsKVC2dItbZF4/view?usp=sharing">Resume</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="quark-gluon-classification-using-contrastive-learning-representations">Quark Gluon Classification using Contrastive Learning Representations</h1>
+<h5 id="supervisor--dr-tilman-plehn-">Supervisor: <a href="https://www.thphys.uni-heidelberg.de/~plehn/"> Dr. Tilman Plehn </a></h5>
+
+<p><br />
+Our building blocks are atomic nuclei, which in turn comprise protons and neutrons, which are made up of quarks and gluons. This project aims to distinguish the quarks (signal) from the gluons (background).</p>
+
+<figure class="figure w-100">
+  <img src="/assets/img/lhc.jpg" class="figure-img img-fluid rounded" alt="Large Hadron Collider" /><figcaption class="figure-caption text-center">Large Hadron Collider</figcaption></figure>
+
+<p>When a collision takes place in the Large Hadron Collider, constituent particles get scattered. The set of scattered particles are called jets. Snapshots of jets are called jet images and have been conventionally used to classify between quark and gluon initiated jets.
+In this research work, we adopt an alternative technique. We train a transformer with contrastive loss to map particle jets to a representation space. Spherical position, particle type and transverse momentum  of the constituent particles are taken into consideration while obtaining the representation of jets.</p>
+
+<p>These linear representations are fed into machine learning models for binary classification tasks (to distinguish between quarks and gluons.)</p>
+
+<!-- ![preview](/assets/img/ucsd.jpg) -->
+
+<p><br /></p>
+
+<h3 id="technical-details">Technical Details</h3>
+<ul>
+<li>Language: Python</li>
+<li>Framework: Pytorch</li>
+<li>Models Experimented With: Logistic Regression, Linear Discriminant Analysis, Random Forest, XGBoost</li>
+<li>Loss Functions: Hinge Loss, Squared Hinge Loss, Mean Squared Error</li>
+<li>Dataset Size:
+<ul><li>Train: 90000 jets </li>
+<li>Test: 10000 jets </li> </ul></li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="results">Results</h3>
+<p>We’ve obtained an AUC of 0.8 so far. Research work is still ongoing.</p>
+
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/nikita-0209/ml_quark_gluon">
+  View Code
+</a>
+
+</p>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Nikita Saxena</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:nikitasaxena0209@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/nikita-0209"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/nikita-saxena"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/nikitasaxena02"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+  
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

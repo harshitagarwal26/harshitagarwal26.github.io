@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Graph Neural Network for the XENON Detector">
+  <meta property="og:description" content="I designed a graph neural network to reconstruct the position of collisions happening in the XENON detector, an underground experiment for studying potential...">
+
+  <title>Graph Neural Network for the XENON Detector</title>
+  <meta name="description" content="I designed a graph neural network to reconstruct the position of collisions happening in the XENON detector, an underground experiment for studying potential...">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>nikita saxena</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/documentation/docs"></a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/workex/">Work Ex</a>
+
+      <a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Extra-Curricular</a>
+
+      <a class="nav-item nav-link " href="/honors/">Honors</a>
+
+      <a class="nav-item nav-link " href="https://drive.google.com/file/d/1-cBqHxyJRVtevimRIAlHsKVC2dItbZF4/view?usp=sharing">Resume</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="graph-neural-network-for-the-xenon-detector">Graph Neural Network for the XENON Detector</h1>
+<h5 id="supervisor--dr-kaixuan-ni-">Supervisor: <a href="https://physics.ucsd.edu/Directory/Person/482"> Dr. Kaixuan Ni </a></h5>
+
+<p><br />
+Fascinated by dark matter? Well, aren’t we all? And I am thrilled that I got the opportunity to directly contribute to its research!</p>
+
+<p>Located in Italy, the <a href="https://science.purdue.edu/xenon1t/">XENON Experiment</a> was established to study potential dark matter candidates. Broadly, it is just a cylinder full of liquid Xenon with vacuum tubes (to detect photons) aligned in a hexagonal arrangement at the top and the bottom faces.</p>
+
+<figure class="figure w-100">
+  <img src="/assets/img/ucsd.jpg" class="figure-img img-fluid rounded" alt="The XENON Detector" /><figcaption class="figure-caption text-center">The XENON Detector</figcaption></figure>
+<!-- ![preview](/assets/img/ucsd.jpg) -->
+
+<p>In fact, this hexagonal arrangement piqued the community’s interest to experiment with graph neural networks. After all, what better than graphs could capture a hexagonal shape!</p>
+
+<p>I designed a graph neural network to reconstruct the position of the collision happening in the detector. And my neural network performed better than the original software used by XENON to reconstruct the position!</p>
+
+<p><br /></p>
+
+<h3 id="technical-details">Technical Details</h3>
+<ul>
+<li>Language: Python</li>
+<li>Library: <a href="https://github.com/danielegrattarola/spektral">Skeptral</a></li>
+<li>API: Keras and Tensorflow</li>
+<li>Model Architecture:
+<ul><li>Layers : Graph Convolutional Layers</li>
+<li>Optimiser: Adam</li>
+<li>Activation Function: ReLu </li>
+<li>Loss Function: Mean Squared Error</li></ul> </li>
+<li>Dataset Size:
+<ul><li>Train: 80000 events </li>
+<li>Test: 20000 events (approximately) </li> </ul></li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="results">Results</h3>
+<p>The Graph Neural Network (with 200k trainable parameters) obtained an RMSE of 1.936 cm. It outperformed a Convolutional Neural Network (with 5 million trainable parameters) by 12%, and the original software used for positon reconstruction by XENON (<a href="https://github.com/XENONnT/straxen"><i>straxen</i></a>) by 67%.</p>
+
+<!-- ## Search Movies
+
+![search](https://www.sketchappsources.com/resources/source-image/microsoft-windows-10-virtual-keyboard-diogo-sousa.png) -->
+
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://docs.google.com/presentation/d/1GxSzdwGt5Zl98TtHSi_1zIr8pTvJ7l0HLCpeG3pLFU4/present?slide=id.g35f391192_00">
+  View Presentation
+</a>
+
+</p>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Nikita Saxena</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:nikitasaxena0209@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/nikita-0209"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/nikita-saxena"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/nikitasaxena02"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+  
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
