@@ -25,11 +25,11 @@ Oh and my birthday is on September 2 and I love surprise gifts! xD
 Now that you know a bit about me I would love to know more about you. So drop me an email, and let's connect!
 <!-- If you know how life works, mail me? -->
 
-<div class="row">
+<div class="column">
 {% include about/skills.html title="Programming" source=site.data.programming-skills %}
 <!-- {% include about/skills.html title="Deep Learning" source=site.data.dl-skills %} -->
 </div>
-<div class="row">
+<div class="column">
 {% include about/skills.html title="Framework" source=site.data.framework-skills %}
 <!-- {% include about/skills.html title="Other Skills" source=site.data.other-skills %} -->
 </div>
