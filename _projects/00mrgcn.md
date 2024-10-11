@@ -11,7 +11,7 @@ description: Developed and implemented deep learning models to address the one-s
 One-shot image recognition can be useful for signature verification, enabling accurate authentication by comparing a new signature to just a single reference signature on file. To facilitate this, we propose a deep learning based
 one-shot image recognition model trained on Omniglot dataset.
 
-{% include elements/figure.html image="/assets/img/mrgcn.png" caption="Overall architecture of Siamese Neural Networks" %}
+{% include elements/figure.html image="/assets/img/snn.png" caption="Overall architecture of Siamese Neural Networks" %}
 
 
 ### Implementation Details
