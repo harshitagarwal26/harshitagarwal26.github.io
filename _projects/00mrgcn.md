@@ -13,6 +13,7 @@ one-shot image recognition model trained on Omniglot dataset.
 
 {% include elements/figure.html image="/assets/img/mrgcn.png" caption="Overall architecture of Siamese Neural Networks" %}
 
+
 ### Implementation Details
 
 Data Pre-processing
@@ -35,23 +36,22 @@ Validation and Testing
 ### Technical Details
 <ul>
 <li>Language: Python</li>
-<li>Semi-Supervised Learning </li>
+<li>One-shot Learning </li>
 <li>BERT for Language Modeling</li>
-<li>Framework: Keras and Tensorflow</li>
-<li>Model: Graph Convolutional Layer</li>
-<li>Loss Function: Mean Squared Error</li>
+<li>Framework: Tensorflow</li>
+<li>Model: Siamese Neural Network</li>
 </ul>
 
 <br>
 
 ### Results
-Initially achieved ~80% accuracy, but through experimentation with different activation functions, improved model performance to reach 90.4% accuracy.
+Initially achieved ~80% accuracy, but through experimentation with different activation functions, optimizer decay rate, learning rate, improved model performance to reach 90.4% accuracy.
 
 
 <p class="text-center">
-{% include elements/button.html link="https://github.com/nikita-0209/kad_mrgcn_public" text="View Code" %}
+{% include elements/button.html link="https://github.com/harshitagarwal26/BITSF312_NNFL/tree/main/Project" text="Github" %}
 </p>
-
+<!-- 
 <p class="text-center">
 {% include elements/button.html link="https://ieeexplore.ieee.org/document/9671446" text="View Paper" %}
-</p>
+</p> -->
