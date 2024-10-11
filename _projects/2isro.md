@@ -6,7 +6,7 @@ description: E-commerce businesses are increasingly facing growing risks from va
 ---
 
 # Fraud Detection in E-commerce using Machine Learning
-##### Supervisor: <a href = "https://scholar.google.com/citations?user=NMTJ718AAAAJ&hl=en"> Dr. Neeraj Agarwal</a>
+##### Supervisor: <a href = "https://www.bits-pilani.ac.in/pilani/shree-prasad-m/">Dr. Shree Prasad M</a>
 
 <br>
 
@@ -14,7 +14,7 @@ E-commerce businesses face a range of fraudulent activities that can severely im
 
 <br>
 
-{% include elements/figure.html image="/assets/img/fraud.png" caption="Photo by NASA on Unsplash" %}
+{% include elements/figure.html image="/assets/img/fraud.png" caption="Examples of E-commerce frauds" %}
 
 <!-- ![preview](/assets/img/fraud0.png) -->
 
