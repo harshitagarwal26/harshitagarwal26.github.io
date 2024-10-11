@@ -49,3 +49,7 @@ The Graph Neural Network (with 200k trainable parameters) obtained an RMSE of 1.
 <p class="text-center">
 {% include elements/button.html link="https://docs.google.com/presentation/d/1GxSzdwGt5Zl98TtHSi_1zIr8pTvJ7l0HLCpeG3pLFU4/present?slide=id.g35f391192_00" text="View Presentation" %}
 </p>
+
+<p class="text-center">
+{% include elements/button.html link="https://docs.google.com/presentation/d/1WjXS26SAQyXHL7AQ-4fc_d-1GfkESrU3nvx0Hhfvydg/present?slide=id.g30a7c5500cf_2_71" text="View Presentation" %}      
+</p>

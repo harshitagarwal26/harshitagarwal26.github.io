@@ -24,16 +24,19 @@ Data Pre-processing
   <li>Then we randomly selected languages for each batch and in every language, formed pairs of images with target of 1 if they belong to the same alphabet and 0 if they are of different alphabets.</li>
 </ul>
 Architecture and Training
-  1. The two input images (x1 and x2) are passed through a ConvNet to generate a fixed length feature vector for each (h(x1) and h(x2)).
-  2. The L1 distance between the feature vectors is then used to compute a similarity score which  determines the final class. 
-  3. We used Adam Optimizer with a learning rate of 0.00009 exponentially decaying at a rate of 0.99 and binary cross-entropy loss. 
-  4. The model was trained for 2000 epochs with a batch size of 32.
+<ul>
+  <li>The two input images (x1 and x2) are passed through a ConvNet to generate a fixed length feature vector for each (h(x1) and h(x2)).</li>
+  <li>The L1 distance between the feature vectors is then used to compute a similarity score which  determines the final class.</li>
+  <li>We used Adam Optimizer with a learning rate of 0.00009 exponentially decaying at a rate of 0.99 and binary cross-entropy loss.</li> 
+  <li>The model was trained for 2000 epochs with a batch size of 32.</li>
+</ul>
 
 Validation and Testing
-  1. N-way One-shot Learning has been used to validate and test the data. 
-  2. For each alphabet, a test image and a support set is generated randomly from the validation set. The test image is then compared to each of the images in the  support set and the pair with the maximum similarity is used to determine the accuracy. 
-  3. If the image with the maximum similarity is the correct one, we consider it as correct and increase the number of correctly classified examples. 
-
+<ul>
+  <li>N-way One-shot Learning has been used to validate and test the data.</li> 
+  <li>For each alphabet, a test image and a support set is generated randomly from the validation set. The test image is then compared to each of the images in the  support set and the pair with the maximum similarity is used to determine the accuracy.</li> 
+  <li>If the image with the maximum similarity is the correct one, we consider it as correct and increase the number of correctly classified examples.</li> 
+</ul>
 <br>
 
 ### Technical Details
@@ -52,7 +55,10 @@ Initially achieved ~80% accuracy, but through experimentation with different act
 
 
 <p class="text-center">
-{% include elements/button.html link="https://github.com/harshitagarwal26/BITSF312_NNFL/tree/main/Project" text="Github" %}
+{% include elements/button.html link="https://github.com/harshitagarwal26/BITSF312_NNFL/blob/main/Project/Final_NNFL_Project.ipynb" text="View Code" %}      
+</p>
+<p class="text-center">
+{% include elements/button.html link="https://docs.google.com/presentation/d/1b94iNpD5U46_cimriA6UBgBfIS2MFAO49UFpo8M0-0o/present?slide=id.g30a508aa66a_1_71" text="View Presentation" %}      
 </p>
 <!-- 
 <p class="text-center">
