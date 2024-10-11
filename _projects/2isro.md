@@ -2,7 +2,7 @@
 name: Fraud Detection in E-commerce using Machine Learning
 tools: [CNN, Computer Vision, Tensorflow]
 image: /assets/img/fraud.png
-description: E-commerce businesses are increasingly facing growing risks from various fraudulent activities. These issues not only escalate operational costs but also threaten consumer trust, making it essential for businesses to implement robust fraud prevention measures. As fraudsters become more sophisticated, the impact on e-commerce operations continues to intensify. Developed a Machine Learning model utilizing the Extra Trees Classifier to identify fraudulent activities on e-commerce platforms, enabling timely intervention against fraudulent users.
+description: E-commerce businesses are increasingly facing growing risks from various fraudulent activities. These issues not only escalate operational costs but also threaten consumer trust, making it essential for businesses to implement robust fraud prevention measures. I Developed a Machine Learning model to identify fraudulent activities on e-commerce platforms, enabling timely intervention against fraudulent users.
 ---
 
 # Super Resolution CNN for Oceanographic Data
