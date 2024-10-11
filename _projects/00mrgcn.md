@@ -1,7 +1,7 @@
 ---
 name: Siamese Networks for One-shot Image Recognition
 tools: [Tensorflow, Python]
-image: /assets/img/mrgcn0.jpg
+image: /assets/img/snn0.png
 description: Developed and implemented deep learning models to address the one-shot image recognition problem using the omniglot dataset.
 ---
 # Siamese Networks for One-Shot Image Recognition
