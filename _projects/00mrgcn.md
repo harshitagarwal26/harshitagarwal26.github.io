@@ -53,6 +53,7 @@ Validation and Testing
 ### Results
 Initially achieved ~80% accuracy, but through experimentation with different activation functions, optimizer decay rate, learning rate, improved model performance to reach 90.4% accuracy.
 
+<br>
 
 <p class="text-center">
 {% include elements/button.html link="https://github.com/harshitagarwal26/BITSF312_NNFL/blob/main/Project/Final_NNFL_Project.ipynb" text="View Code" %}      

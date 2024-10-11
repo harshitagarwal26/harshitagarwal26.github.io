@@ -52,9 +52,12 @@ Challenges
 <li>Method: Extra Trees Classifier</li>
 </ul>
 
+<br>
+
 ### Results
 Evaluated model performance using the AUC of the ROC curve, achieving a recall of 92% and a precision of 96%.
 
+<br>
 
 <p class="text-center">
 {% include elements/button.html link="https://github.com/harshitagarwal26/E-commerce_fraud/blob/main/Ecommerce_fraud.ipynb?short_path=88026b7" text="View Code" %}      
