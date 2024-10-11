@@ -13,16 +13,23 @@ one-shot image recognition model trained on Omniglot dataset.
 
 {% include elements/figure.html image="/assets/img/snn.png" caption="Overall architecture of Siamese Neural Networks" %}
 
-  We demonstrate the effectiveness of the proposed model on a neo-nazi underground forum, IronMarch. </p>
-  We first modeled the hackforum into a homogeneous graph of users, where the multiple edges between users are captured based on their involvement in private conversations, group discussions and other miscellaneous activities. 
-  In addition, we also encode the textual content shared among users' in form of distributed feature representation generated from BERT.
-  To obtain ground truth labels for training data, we propose a hypothesis to calculate the scores for each user based on the quality and quantity of their involvement in the underground forum. 
-  The proposed framework jointly embeds the users' and multi relational information to learn the nodes embeddings in the graph. 
-  We demonstrate the effectiveness of the proposed model on a neo-nazi underground forum, IronMarch.
-
+Data Pre-processing
   1. Firstly, we loaded the images by first looping over all the languages and fetching all the images for each alphabet in every language one by one. This was done for both test and validation sets.
   2. Then we randomly selected languages for each batch and in every language, formed pairs of images with target of 1 if they belong to the same alphabet and 0 if they are of different alphabets.
 
+Architecture and Training
+  1. The two input images (x1 and x2) are passed through a ConvNet to generate a fixed length feature vector for each (h(x1) and h(x2)).
+  2. The L1 distance between the feature vectors is then used to compute a similarity score which  determines the final class. 
+  3. We used Adam Optimizer with a learning rate of 0.00009 exponentially decaying at a rate of 0.99 and binary cross-entropy loss. 
+  4. The model was trained for 2000 epochs with a batch size of 32.
+
+Validation and Testing
+  1. N-way One-shot Learning has been used to validate and test the data. 
+  2. For each alphabet, a test image and a support set is generated randomly from the validation set. The test image is then compared to each of the images in the  support set and the pair with the maximum similarity is used to determine the accuracy. 
+  3. If the image with the maximum similarity is the correct one, we consider it as correct and increase the number of correctly classified examples. 
+
+Results
+  Initially achieved ~80% accuracy, but through experimentation with different activation functions, improved model performance to reach 90.4% accuracy.
 
 <br>
 
