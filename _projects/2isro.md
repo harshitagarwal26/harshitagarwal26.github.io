@@ -39,29 +39,25 @@ Modelling
 
 <!-- ![preview](/assets/img/isro2.jpeg) -->
 
+
 Challenges 
 * One of the primary challenges encountered was the trade-off between increasing recall and inadvertently raising the false positive rate, resulting in the misclassification of many legitimate transactions as fraudulent.
 
 <br>
 
-<!-- ### Technical Details
+### Technical Details
 <ul>
 <li>Language: Python</li>
-<li>Library: <a href="https://www.unidata.ucar.edu/software/netcdf/"> NetCDF</a></li>
-<li>API: Keras and Tensorflow</li>
-<li>Model Architecture:
-<ul><li>Layers : Convolutional Layers</li>
-<li>Optimiser: Adam</li>
-<li>Loss Function: Mean Squared Error</li>
-<li> Activation Function: ReLu </li>
-<li>Metric: Peak Signal to Noise Ratio </li> </ul> </li>
-<li>Dataset Size:
-<ul><li>Train: 1800 fields </li>
-<li>Test: 600 fields </li> </ul></li>
-</ul> -->
+<li>Library: scikit-learn</li>
+<li>Method: Extra Trees Classifier</li>
+</ul>
+
+### Results
+Evaluated model performance using the AUC of the ROC curve, achieving a recall of 92% and a precision of 96%.
+
 
 <p class="text-center">
-{% include elements/button.html link="https://github.com/harshitagarwal26/E-commerce_fraud/blob/main/Ecommerce_fraud.ipynb" text="View Code" %}      
+{% include elements/button.html link="https://github.com/harshitagarwal26/E-commerce_fraud/blob/main/Ecommerce_fraud.ipynb?short_path=88026b7" text="View Code" %}      
 </p>
 <p class="text-center">
 {% include elements/button.html link="https://docs.google.com/presentation/d/1WjXS26SAQyXHL7AQ-4fc_d-1GfkESrU3nvx0Hhfvydg/present?slide=id.g30a7c5500cf_2_71" text="View Presentation" %}      
