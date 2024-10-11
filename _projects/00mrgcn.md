@@ -19,10 +19,10 @@ one-shot image recognition model trained on Omniglot dataset.
 ### Implementation Details
 
 Data Pre-processing
-<ol>
+<ul>
   <li>Firstly, we loaded the images by first looping over all the languages and fetching all the images for each alphabet in every language one by one. This was done for both test and validation sets.</li>
   <li>Then we randomly selected languages for each batch and in every language, formed pairs of images with target of 1 if they belong to the same alphabet and 0 if they are of different alphabets.</li>
-</ol>
+</ul>
 Architecture and Training
   1. The two input images (x1 and x2) are passed through a ConvNet to generate a fixed length feature vector for each (h(x1) and h(x2)).
   2. The L1 distance between the feature vectors is then used to compute a similarity score which  determines the final class. 

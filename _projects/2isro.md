@@ -20,19 +20,27 @@ E-commerce businesses face a range of fraudulent activities that can severely im
 
 <br>
 
-But these satellites aren't perfect. Though they perform great under clear skies, they cannot record high-resolution measurements on cloudy days.
+### Implementation Details
 
-And that's where the problem creeps in...
+Data preprocessing
 
-For all the great uses of SST that I just mentioned, there is a prerequisite-the data needs to be of high resolution. However, luckily, with satellites constantly monitoring sea surface temperature, there has been an upsurge in the amount of available SST Fields. And when there is a lot of data, we often think <i>deep learning.</i>
+1. For this project, we started with an open source Fraud accounts dataset available on Kaggle.
 
-In this project, I assessed the efficiency of Convolutional Neural Networks to reconstruct high SR measurements from low SR. My study proved that CNNs could successfully increase the spatial resolution of sea surface temperature observations from 15 km to 1km.
+2. Next, conducted feature engineering to create meaningful features, such as *buy_time* which quantifies the time difference between when a user signs up for an e-commerce platform and when they make their first purchase, thereby improving fraud detection. For instance, accounts with a *buy_time* of just a few minutes may indicate fraudulent activity. We also plotted correlation matrix to confirm this behaviour. Negative correlation was found with *buy_time* and chances of being fraud.
+
+3. Analyzed the dataset and identified an imbalance, with a scarcity of fraudulent users, and applied SMOTE (Synthetic Minority Over-sampling Technique) to effectively address the issue of dataset imbalance.
+
+4. 3 new variation of dataset we created namely: SMOTE, Borderline SMOTE, PCA. These variations of the dataset were used in combinations with different   models to achieve better results.
+
+Modelling
+ 1. Started with Logistic Regression, then implemented Extra Tree Classifier to improve the results. 
 
 {% include elements/figure.html image="/assets/img/isro2.jpeg" caption="Results" %}
 
 <!-- ![preview](/assets/img/isro2.jpeg) -->
 
-In an SST Field, each pixel gives the measurement of temperature at that location. So, it’s usually between a range of 20-40 degrees Celsius. Most of the state-of-the-art super-resolution networks have been trained on 255-bit image data. So, evaluating the same network for SST data (which has a lesser range), was one of the biggest challenges of this project.
+Challenges 
+1. One of the primary challenges encountered was the trade-off between increasing recall and inadvertently raising the false positive rate, resulting in the misclassification of many legitimate transactions as fraudulent.
 
 <br>
 
