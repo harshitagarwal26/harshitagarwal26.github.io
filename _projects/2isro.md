@@ -8,14 +8,17 @@ description: E-commerce businesses are increasingly facing growing risks from va
 # Fraud Detection in E-commerce using Machine Learning
 ##### Supervisor: <a href = "https://scholar.google.com/citations?user=NMTJ718AAAAJ&hl=en"> Dr. Neeraj Agarwal</a>
 
+<br>
 
 E-commerce businesses face a range of fraudulent activities that can severely impact their operations. One common issue is *return-to-origin* fraud, where customers exploit return policies by falsely claiming returns or returning damaged goods for a refund. *Chargeback fraud* occurs when a buyer disputes a legitimate transaction, often claiming they never received the item, leading to a refund while they keep the product. *Account takeover* is another major concern, where hackers gain access to customer accounts to make unauthorized purchases. Lastly, *promo code* abuse involves the misuse of promotional discounts, either by reusing codes beyond their intended use or sharing them widely, resulting in financial loss for the business. These types of fraud pose significant challenges, increasing operational costs and impacting consumer trust.
 
+<br>
 
 {% include elements/figure.html image="/assets/img/fraud.png" caption="Photo by NASA on Unsplash" %}
 
 <!-- ![preview](/assets/img/fraud0.png) -->
 
+<br>
 
 But these satellites aren't perfect. Though they perform great under clear skies, they cannot record high-resolution measurements on cloudy days.
 
