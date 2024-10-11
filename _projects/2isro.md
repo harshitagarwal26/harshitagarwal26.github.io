@@ -1,8 +1,8 @@
 ---
-name: Super Resolution CNN for Sea Surface Temperature
+name: Fraud Detection in E-commerce using Machine Learning
 tools: [CNN, Computer Vision, Tensorflow]
-image: /assets/img/isro.jpg
-description: High-resolution measurements of sea surface temperature (SST) are crucial to climate and ocean state forecasting. However, on cloudy days, satellites can only procure low-resolution SST measurements. I implemented a super-resolution Convolutional Neural Network to successfully downsample Sea Surface Temperature (SST) fields of the Bay of Bengal from a spatial resolution of 15 km to 1km.
+image: /assets/img/fraud.png
+description: E-commerce businesses are increasingly facing growing risks from various fraudulent activities. These issues not only escalate operational costs but also threaten consumer trust, making it essential for businesses to implement robust fraud prevention measures. As fraudsters become more sophisticated, the impact on e-commerce operations continues to intensify. Developed a Machine Learning model utilizing the Extra Trees Classifier to identify fraudulent activities on e-commerce platforms, enabling timely intervention against fraudulent users.
 ---
 
 # Super Resolution CNN for Oceanographic Data
@@ -14,9 +14,12 @@ And why do we need to measure the sea surface temperature?
 
 Well, SST is a strong indicator of global climate change and stress to aquatic life. It also plays a pivotal role in weather and ocean state forecasting. Radiometers (thermal infrared or microwave) in space-borne satellites measure SST.
 
-{% include elements/figure.html image="/assets/img/isro.jpg" caption="Photo by NASA on Unsplash" %}
+E-commerce businesses face a range of fraudulent activities that can severely impact their operations. One common issue is *return-to-origin* fraud, where customers exploit return policies by falsely claiming returns or returning damaged goods for a refund. *Chargeback fraud* occurs when a buyer disputes a legitimate transaction, often claiming they never received the item, leading to a refund while they keep the product. *Account takeover* is another major concern, where hackers gain access to customer accounts to make unauthorized purchases. Lastly, *promo code* abuse involves the misuse of promotional discounts, either by reusing codes beyond their intended use or sharing them widely, resulting in financial loss for the business. These types of fraud pose significant challenges, increasing operational costs and impacting consumer trust.
 
-<!-- ![preview](/assets/img/isro.jpg) -->
+
+{% include elements/figure.html image="/assets/img/fraud.png" caption="Photo by NASA on Unsplash" %}
+
+<!-- ![preview](/assets/img/fraud.png) -->
 
 
 But these satellites aren't perfect. Though they perform great under clear skies, they cannot record high-resolution measurements on cloudy days.
@@ -55,7 +58,7 @@ In an SST Field, each pixel gives the measurement of temperature at that locatio
 {% include elements/button.html link="https://github.com/nikita-0209/downscale-sst" text="View Code" %}      
 </p>
 <p class="text-center">
-{% include elements/button.html link="https://docs.google.com/presentation/d/169SzAYUFLvOWzhyE-tbJCy3iIlB6OBOVi9kdda-m290/present?slide=id.gcb9a0b074_1_140" text="View Presentation" %}      
+{% include elements/button.html link="https://docs.google.com/presentation/d/1WjXS26SAQyXHL7AQ-4fc_d-1GfkESrU3nvx0Hhfvydg/present?slide=id.g30a7c5500cf_2_71" text="View Presentation" %}      
 </p>
 <p class="text-center">
 {% include elements/button.html link="https://drive.google.com/file/d/1IAE-T9W7qWpdHEKeVr-rZRE2RLLZ3Lm8/view?usp=sharing" text="View Report" %}
