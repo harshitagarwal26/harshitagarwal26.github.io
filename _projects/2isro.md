@@ -5,7 +5,7 @@ image: /assets/img/fraud0.png
 description: E-commerce businesses are increasingly facing growing risks from various fraudulent activities. These issues not only escalate operational costs but also threaten consumer trust, making it essential for businesses to implement robust fraud prevention measures. I Developed a Machine Learning model to identify fraudulent activities on e-commerce platforms, enabling timely intervention against fraudulent users.
 ---
 
-# Super Resolution CNN for Oceanographic Data
+# Fraud Detection in E-commerce using Machine Learning
 ##### Supervisor: <a href = "https://scholar.google.com/citations?user=NMTJ718AAAAJ&hl=en"> Dr. Neeraj Agarwal</a>
 
 
