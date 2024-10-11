@@ -1,22 +1,17 @@
 ---
 name: Siamese Networks for One-shot Image Recognition
-tools: [Tensorflow, Keras, GCN]
+tools: [Tensorflow, Python]
 image: /assets/img/mrgcn0.jpg
-description: I propose a semi-supervised deep learning framework to detect key actors by classifying underground forum users into different groups based on their activity patterns.
+description: Developed and implemented deep learning models to address the one-shot image recognition problem using the omniglot dataset.
 ---
 # Siamese Networks for One-Shot Image Recognition
-##### Supervisor: <a href = "https://www.bits-pilani.ac.in/pilani/vintiagarwal/profile"> Dr. Vinti Agarwal</a>
+##### Supervisor: <a href = "https://universe.bits-pilani.ac.in/pilani/surekha/Profile"> Dr. Surekha Bhanot</a>
 
 <br>
-Cybercriminals who interact extensively
-on underground forums, often, exchange illegal commodities and indulge in discussions on unwarranted
-topics. To facilitate the disruption of these highly
-proficient criminals, we propose a deep learning based
-multi-relational graph convolutional network approach
-to analyse the underground forum and identify key
-actors.
+One-shot image recognition can be useful for signature verification, enabling accurate authentication by comparing a new signature to just a single reference signature on file. To facilitate this, we propose a deep learning based
+one-shot image recognition model trained on Omniglot dataset.
 
-{% include elements/figure.html image="/assets/img/mrgcn.png" caption="Overall architecture of KAD-mRGCN framework" %}
+{% include elements/figure.html image="/assets/img/snn.png" caption="Overall architecture of Siamese Neural Networks" %}
 
   We demonstrate the effectiveness of the proposed model on a neo-nazi underground forum, IronMarch. </p>
   We first modeled the hackforum into a homogeneous graph of users, where the multiple edges between users are captured based on their involvement in private conversations, group discussions and other miscellaneous activities. 
@@ -24,6 +19,10 @@ actors.
   To obtain ground truth labels for training data, we propose a hypothesis to calculate the scores for each user based on the quality and quantity of their involvement in the underground forum. 
   The proposed framework jointly embeds the users' and multi relational information to learn the nodes embeddings in the graph. 
   We demonstrate the effectiveness of the proposed model on a neo-nazi underground forum, IronMarch.
+
+  1. Firstly, we loaded the images by first looping over all the languages and fetching all the images for each alphabet in every language one by one. This was done for both test and validation sets.
+  2. Then we randomly selected languages for each batch and in every language, formed pairs of images with target of 1 if they belong to the same alphabet and 0 if they are of different alphabets.
+
 
 <br>
 
