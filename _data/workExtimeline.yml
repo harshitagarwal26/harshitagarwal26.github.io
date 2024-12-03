@@ -2,7 +2,7 @@
 - title: Software Engineer, Palo Alto Networks
   from: August 2023
   to: Present
-  description: <ul><li>Worked on various routing protocols such as OSPF, BGP, RIP as a part of Next Gen Firewall Team.</li>
+  description: <ul><li>Working on various routing protocols such as OSPF, BGP, RIP as a part of Next-Generation Firewall Team.</li>
               <li>Developed a critical upgrade script using C to prevent failure of customer’s firewall while upgrading.</li>
               <li>Worked extensively with GDB to debug core files generated during a crash.</li></ul>
 
