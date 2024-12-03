@@ -9,20 +9,15 @@ weight: 1
 
 Hey, there! I am **{{ site.author.name }}** <br>
 
-I am in my senior year at BITS Pilani, where I am pursuing a dual major in Physics and Computer Science. I'd be graduating in 2023. I'm currently a research intern in <a href = "https://yoshuabengio.org/">Yoshua Bengio</a>'s group at <a href="https://mila.quebec/en/"> MILA </a> where I am working on this super exciting idea of <a href = "https://milayb.notion.site/GFlowNet-Tutorial-919dcf0a0f0c4e978916a2f509938b00#501449fd3de348e8b93769a523d1769d">Generative Flow Networks</a>! 
- <br>
+I am a graduate of BITS Pilani, currently working as a Software Engineer at Palo Alto Networks. During my time at BITS, I developed a deep interest in computer science and its applications, particularly in machine learning, cybersecurity, and systems programming. Both my research and industry experiences have played a key role in providing me with a solid foundation, helping me transform theoretical knowledge into practical solutions.
 
-My long-term goal is to develop AI methods that enable AI agents to have the ability to give rise to new concepts by thinking and explaining phenomena that they have not been exposed to. Broadly, I want to understand how people integrate perception and reasoning to understand the world around them, and then appl the same to deep learning models. 
+My research internships have allowed me to delve into advanced topics like machine learning model robustness and the security of AI systems. These experiences not only sharpened my technical proficiency but also deepened my understanding of the ethical implications of deploying machine learning and AI technologies in real-world scenarios. I strongly believe that the future of AI depends on building systems that are both innovative and responsible, ensuring that these technologies are used ethically and securely. My industry experience at organizations like Palo Alto Networks has given me hands-on exposure to real-world applications, such as optimizing firewall systems and enhancing security protocols, further solidifying my ability to apply these principles in practice.
 
-I am also actively learning about causality in deep learning, continual learning, language grounding, reinforcement learning and fariness in AI. (Feels like I'm all over the place? Well I'm just trying to figure out what I like the most.). If you have a project idea you'd like to discuss, let's get in touch!
+Throughout my academic and professional journey, I have worked on a range of projects that allowed me to apply my understanding of algorithms, data structures, and emerging technologies. These opportunities have reinforced my passion for creating impactful solutions and deepened my commitment to the ethical use of technology.
 
-Internships at several organizations have helped me gain solid ground in implementing deep learning based models. I’ve successfully completed projects using object detection modules, super-resolution networks, graph neural networks, auto-encoders, autoregressive networks and transformers. I’m well-acquainted with machine learning algorithms like discriminant analysis, stochastic regression, and decision trees. 
+Outside of academics and work, I enjoy staying active and exploring new hobbies. I love hiking, traveling, and discovering new cuisines—especially when shared with friends. I’m a huge foodie and always up for trying something new! I also enjoy reading novels, listening to music, and watching movies. If you’re interested in discussing tech, AI ethics, or just want to connect, feel free to reach out—I’d love to chat!
 
-Work apart, I love hiking and travelling! I really enjoy meeting people from different parts of the world, and learning about their culture. I’m an outgoing introvert. I am a huge foodie and love trying different cuisines. I listen to soft pop, and countryside music. In my free time, if I am not sleeping, I'm either scrolling Twitter or reading a novel!
 
-Oh and my birthday is on September 2 and I love surprise gifts! xD 
-
-Now that you know a bit about me I would love to know more about you. So drop me an email, and let's connect!
 <!-- If you know how life works, mail me? -->
 
 <div class="row">
