@@ -6,7 +6,7 @@
               <li>Developed a critical upgrade script using C to prevent failure of customer’s firewall while upgrading.</li>
               <li>Worked extensively with GDB to debug core files generated during a crash.</li></ul>
 
-- title: Research Intern, TU Dresden
+- title: Research Intern, Ruhr Universitat Bochum
   from: June 2023
   to: Present (Part time)
   description: <ul><li>Worked on making Quantized Neural Networks more robust against adversarial attacks.</li>
@@ -46,5 +46,5 @@
 - title: ML Summer School, Amazon
   from: July 2021
   to: July 2020
-  description: <ul> <li>Attended sessions on 6 Machine Leaning modules:- Supervised Learning, Deep Neural Networks, Dimensionality Reduction, Unsupervised Learning, Probabilistic Graphical Methods, Sequential Learning.</li>
+  description: <ul> <li>Attended sessions on 6 Machine Learning modules:- Supervised Learning, Deep Neural Networks, Dimensionality Reduction, Unsupervised Learning, Probabilistic Graphical Methods, Sequential Learning.</li>
               <li>Learnt applications of various Machine Learning techniques in real world.</li></ul>
