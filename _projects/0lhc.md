@@ -1,10 +1,10 @@
 ---
-name: Quark Gluon Classification using Contrastive Learning Representations
-tools: [Scikit, XGBoost, Pytorch]
+name: Writer’s Blog
+tools: [JavaScript, NodeJS, MongoDB]
 image: /assets/img/lhc.jpg
-description: I trained a transformer-encoder network with contrastive loss to map particle jets to a representation space. I implemented ML models to classify the obtained representations of jets into quarks and gluons.
+description: Developed a web application for creating, sharing, and browsing public and private stories.
 ---
-<!-- # Quark Gluon Classification using Contrastive Learning Representations
+<!-- # Writer’s Blog
 ##### Supervisor: <a href = "https://www.thphys.uni-heidelberg.de/~plehn/"> Dr. Tilman Plehn </a>
 
 <br>
@@ -41,3 +41,17 @@ We've obtained an AUC of 0.8 so far. Research work is still ongoing.
 <p class="text-center">
 {% include elements/button.html link="https://github.com/nikita-0209/ml_quark_gluon" text="View Code" %}
 </p> -->
+
+# Writer’s Blog
+
+<ul>
+  <li>Developed a web application for creating, sharing, and browsing public and private stories.</li>
+  <li>Set up Google OAuth authentication with Passport.js in a Node.js and Express.js environment.</li>
+  <li>Hosted the database on MongoDB Atlas and added public/private story features to ensure user privacy.</li>
+</ul>
+
+<br>
+
+<p class="text-center">
+{% include elements/button.html link="https://github.com/harshitagarwal26/Writer-Blog" text="View Code" %}      
+</p>
