@@ -6,6 +6,8 @@ description: Developed a dynamic web application that allows users to create, sh
 ---
 # Writer’s Blog
 
+<br>
+
 <ul>
   <li>Developed a web application for creating, sharing, and browsing public and private stories.</li>
   <li>Set up Google OAuth authentication with Passport.js in a Node.js and Express.js environment.</li>
