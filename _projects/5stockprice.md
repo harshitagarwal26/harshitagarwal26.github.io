@@ -1,10 +1,10 @@
 ---
-name: Cross-Modal Text-Image Retrieval
+name: Satellite Image Recognition
 tools: [Python, Stanford CoreNLP API]
 image: /assets/img/stock2.jpg
 description: Developed a text-image retrieval system leveraging global and local information on the RSICD dataset.
 ---
-# Cross-Modal Text-Image Retrieval
+# Satellite Image Recognition
 ##### Supervisor: <a href = "https://www.bits-pilani.ac.in/pilani/poonam-goyal/"> Prof. Poonam Goyal</a>
 
 <br>
