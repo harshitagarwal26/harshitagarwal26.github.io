@@ -1,7 +1,15 @@
 ---
-name: Stock Price Prediction
-tools: [Time Series Forecasting, XGBoost]
+name: Cross-Modal Text-Image Retrieval
+tools: [Python, Stanford CoreNLP API]
 image: /assets/img/stock2.jpg
-description: I experimented with different techniques (inclusive of Facebook Prophet, Naive Forecasting, Neural Networks and XGBoost) on a single dataset to learn the ins-and-outs of time-series forecasting.
-external_url: https://medium.com/swlh/stock-price-prediction-xgboost-1fce6cbd24d7
+description: Developed a text-image retrieval system leveraging global and local information on the RSICD dataset.
 ---
+# Cross-Modal Text-Image Retrieval
+##### Supervisor: <a href = "https://www.bits-pilani.ac.in/pilani/poonam-goyal/"> Prof. Poonam Goyal</a>
+
+<br>
+<ul>
+  <li>Developed a text-image retrieval system leveraging global and local information on the RSICD dataset.</li>
+  <li>Generated text features and identified linguistic patterns using Stanford CoreNLP API.</li>
+  <li>Fused text features with global and local image features to compute a comprehensive similarity matrix.</li>
+</ul>
