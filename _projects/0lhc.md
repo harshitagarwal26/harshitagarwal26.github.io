@@ -2,7 +2,7 @@
 name: Writer’s Blog
 tools: [JavaScript, NodeJS, MongoDB]
 image: /assets/img/lhc.jpg
-description: Developed a web application for creating, sharing, and browsing public and private stories.
+description: Developed a dynamic web application that allows users to create, share, and browse stories. The platform supports both public and private stories, ensuring user privacy and flexibility. Key features include a user-friendly interface, secure login and authentication, and customizable sharing settings to control story visibility.
 ---
 # Writer’s Blog
 
