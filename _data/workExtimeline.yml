@@ -6,40 +6,41 @@
               <li>Developed a critical upgrade script using C to prevent failure of customer’s firewall while upgrading.</li>
               <li>Worked extensively with GDB to debug core files generated during a crash.</li></ul>
 
-- title: Research Intern, Ruhr Universitat Bochum
+- title: Research Intern, Ruhr University Bochum
   from: June 2023
-  to: Present (Part time)
+  to: July 2023
   description: <ul><li>Worked on making Quantized Neural Networks more robust against adversarial attacks.</li>
-              <li>Implemented LSQ-Net, DoReFa-Net, N2UQ for Quantization and PGD for Adversarial Training..</li></ul>
+              <li>Implemented LSQ-Net, DoReFa-Net, N2UQ for Quantization and PGD, FGSM for Adversarial Training.</li>
+              <li>Improved the robust accuracy of quantized models, with some models showing gains of up to 40%.</li></ul>
 
 - title: Software Development Intern, Disney+Hotstar
   from: January 2023
   to: June 2023
   description: <ul><li>Designed Risk Engine V2 to risk score all users using FAIR model and detect malicious users accordingly.</li>
               <li>Increased the coverage of V2 model by 100 times and made it comprehensive by including device and IP data.</li>
-              <li>Programmed an Apache Spark job in scala and ran it on Apache Hadoop.</li>
-              <li>Developed APIs using Golang. Used Clickhouse Database to read and write the data.</li></ul>
+              <li>Developed and executed an Apache Spark job in Scala on an Apache Hadoop cluster.</li>
+              <li>Built APIs in Golang and integrated them with ClickHouse Database for efficient data read/write operations.</li></ul>
 
 - title: Data Science Intern, Pixis
   from: September 2022
   to: December 2022
   description: <ul><li>Worked on increasing the ROI on ads for clients by suggesting ads using AI as a part of the creative-ai team.</li> 
               <li>Developed prompts for the GPT-3 model to give ad suggestions based on a particular tone and offer.</li> 
-              <li>Built a streamlit application using Python to take inputs from clients and display the suggestions.</li> 
-              <li>Developed readability score, brand centric score, customer centric score for analysis of the ad suggestions.</li> </ul>
+              <li>Developed a Streamlit application in Python to collect client inputs and display personalized suggestions.</li> 
+              <li>Created readability, brand-centric, and customer-centric scores to analyze ad suggestions.</li> </ul>
 
 - title: Software Development Intern, Samsung Research Institute Bangalore
   from: May 2022
   to: July 2022
   description: <ul> <li>Implemented a custom DynamoDB connector for Kafka connect Framework as a part of the Data team. </li>
-                <li>Configured Docker to set up Apache Kafka using confluent docker images.</li>
+                <li>Implemented Docker configurations to establish Apache Kafka using Confluent Docker images.</li>
                 <li>Integrated kafka connect API with the source connector and streamed data from DynamoDB to kafka cluster.</li></ul>
 
 
-- title: Machine Learning Intern, eShipz.com
-  from: June 2021
+- title: Machine Learning Intern, eShipz - LogIQ Labs
+  from: May 2021
   to: July 2021
-  description: <ul> <li>Designed a machine learning model to detect fraud accounts on e-commerce websites using Logistic Regression.</li>
+  description: <ul> <li>Built a machine learning model with Logistic Regression to detect fraudulent accounts on e-commerce websites.</li>
                 <li>Performed feature engineering, implemented one-hot encoding and algorithms such as Extra Trees Classifier.</li>
                 <li>Analyzed performance using AUC of ROC curve and achieved a recall of 92% and precision of 96%.</li></ul>
 
