@@ -13,7 +13,7 @@
               <li>Implemented LSQ-Net, DoReFa-Net, N2UQ for Quantization and PGD, FGSM for Adversarial Training.</li>
               <li>Improved the robust accuracy of quantized models, with some models showing gains of up to 40%.</li></ul>
 
-- title: Software Development Intern, Disney+Hotstar
+- title: Software Development Intern, Disney+ Hotstar
   from: January 2023
   to: June 2023
   description: <ul><li>Designed Risk Engine V2 to risk score all users using FAIR model and detect malicious users accordingly.</li>
