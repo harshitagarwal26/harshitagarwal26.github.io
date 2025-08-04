@@ -1,14 +1,14 @@
 
 - title: Software Engineer, Palo Alto Networks
   from: August 2023
-  to: Present
+  to: July 2025
   description: <ul><li>Working on various routing protocols such as OSPF, BGP, RIP as a part of Next-Generation Firewall Team.</li>
               <li>Developed a critical upgrade script using C to prevent failure of customer’s firewall while upgrading.</li>
               <li>Worked extensively with GDB to debug core files generated during a crash.</li></ul>
 
-- title: Research Intern, Ruhr University Bochum
+- title: Research Intern, Technische Universität Dresden
   from: June 2023
-  to: July 2023
+  to: June 2025
   description: <ul><li>Worked on making Quantized Neural Networks more robust against adversarial attacks.</li>
               <li>Implemented LSQ-Net, DoReFa-Net, N2UQ for Quantization and PGD, FGSM for Adversarial Training.</li>
               <li>Improved the robust accuracy of quantized models, with some models showing gains of up to 40%.</li></ul>
