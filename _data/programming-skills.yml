@@ -1,15 +1,15 @@
 - name: Python
-  percentage: 65
+  percentage: 90
   color: danger
 
 - name: C/C++
-  percentage: 65
+  percentage: 90
   color: info
 
 - name: GoLang
-  percentage: 25
+  percentage: 75
   color: light
 
 - name: Java
-  percentage: 25
+  percentage: 75
   color: warning
