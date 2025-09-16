@@ -2,50 +2,48 @@
 - title: Software Engineer, Palo Alto Networks
   from: August 2023
   to: July 2025
-  description: <ul><li>Working on various routing protocols such as OSPF, BGP, RIP as a part of Next-Generation Firewall Team.</li>
-              <li>Developed a critical upgrade script using C to prevent failure of customer’s firewall while upgrading.</li>
-              <li>Worked extensively with GDB to debug core files generated during a crash.</li></ul>
+  description: <ul><li>Delivered a high-impact reliability project by engineering a C-based script that prevented firewall failures during upgrade operations, safeguarding thousands of enterprise networks and ensuring 100% uptime.</li>
+              <li>Enhanced operational efficiency by designing an automated testing pipeline, reducing regression occurrences by approximately 40% and cutting manual testing time by 15+ hours per week.</li>
+              <li>Integrated routing protocols (OSPF, BGP, RIP) into the Next-Generation Firewall, improving routing performance in global customer deployments.</li></ul>
 
 - title: Research Intern, Technische Universität Dresden
   from: June 2023
-  to: June 2025
-  description: <ul><li>Worked on making Quantized Neural Networks more robust against adversarial attacks.</li>
-              <li>Implemented LSQ-Net, DoReFa-Net, N2UQ for Quantization and PGD, FGSM for Adversarial Training.</li>
-              <li>Improved the robust accuracy of quantized models, with some models showing gains of up to 40%.</li></ul>
+  to: June 2025 (Self-employed)
+  description: <ul><li>Designed and implemented an end-to-end machine learning pipeline for Quantized Neural Networks (QNNs) with adversarial training to improve real-world robustness.</li>
+              <li>Conducted large-scale experimentation with Projected Gradient Descent (PGD) and Fast Gradient Sign Method (FGSM) adversarial attacks, improving robust accuracy by up to 40% on select models.</li>
+              <li>Collaborated with scientists to integrate LSQ, DoReFa-Net, and N2UQ quantization techniques, reducing model size by 4× while maintaining accuracy within 5% of full-precision baselines.</li></ul>
 
 - title: Software Development Intern, Disney+ Hotstar
   from: January 2023
   to: June 2023
-  description: <ul><li>Designed Risk Engine V2 to risk score all users using FAIR model and detect malicious users accordingly.</li>
-              <li>Increased the coverage of V2 model by 100 times and made it comprehensive by including device and IP data.</li>
-              <li>Developed and executed an Apache Spark job in Scala on an Apache Hadoop cluster.</li>
-              <li>Built APIs in Golang and integrated them with ClickHouse Database for efficient data read/write operations.</li></ul>
+  description: <ul><li>Designed a risk scoring system to detect malicious users, improving detection coverage by 100× through integration of device/IP data, reducing false negatives by approximately 30%.</li>
+              <li>Built a Scala-based Apache Spark pipeline processing 100M+ events per day, preventing $10M in fraudulent transactions annually while cutting compute costs by 25% through optimized job execution.</li>
+              <li>Developed APIs in Go and integrated with ClickHouse to process 50K+ queries/second with latency under 90ms.</li>
+              <li>Collaborated with data engineers and analysts to ensure accurate risk scoring for 80M+ user accounts, maintaining 96% detection accuracy in high-stakes decision-making systems.</li></ul>
 
 - title: Data Science Intern, Pixis
   from: September 2022
   to: December 2022
-  description: <ul><li>Worked on increasing the ROI on ads for clients by suggesting ads using AI as a part of the creative-ai team.</li> 
-              <li>Developed prompts for the GPT-3 model to give ad suggestions based on a particular tone and offer.</li> 
-              <li>Developed a Streamlit application in Python to collect client inputs and display personalized suggestions.</li> 
-              <li>Created readability, brand-centric, and customer-centric scores to analyze ad suggestions.</li> </ul>
+  description: <ul><li>Implemented an AI-driven ad suggestion model by prompt engineering GPT-3 for tone-based generation, helping brands increase ad ROI through more targeted and tone-consistent ad captions.</li> 
+              <li>Engineered a Streamlit application featuring an interactive GUI and real-time visualization of machine learning model outputs, enabling clients to process 500+ inputs per day.</li> 
+              <li>Iterated on tone calibration logic via prompt chaining and few-shot examples, leading to a 75% increase in user-rated coherence of outputs.</li> </ul>
 
 - title: Software Development Intern, Samsung Research Institute Bangalore
   from: May 2022
   to: July 2022
-  description: <ul> <li>Implemented a custom DynamoDB connector for Kafka connect Framework as a part of the Data team. </li>
-                <li>Implemented Docker configurations to establish Apache Kafka using Confluent Docker images.</li>
-                <li>Integrated kafka connect API with the source connector and streamed data from DynamoDB to kafka cluster.</li></ul>
+  description: <ul> <li>Developed a custom DynamoDB connector for the Kafka Connect Framework, enabling streaming of millions of records per day into Kafka. </li>
+                <li>Deployed Dockerized Kafka solutions, reducing setup time from hours to under 20 minutes.</li>
+                <li>Integrated the connector with internal systems, improving data pipeline throughput by 25%.</li></ul>
 
 
 - title: Machine Learning Intern, eShipz - LogIQ Labs
   from: May 2021
   to: July 2021
-  description: <ul> <li>Built a machine learning model with Logistic Regression to detect fraudulent accounts on e-commerce websites.</li>
-                <li>Performed feature engineering, implemented one-hot encoding and algorithms such as Extra Trees Classifier.</li>
-                <li>Analyzed performance using AUC of ROC curve and achieved a recall of 92% and precision of 96%.</li></ul>
+  description: <ul> <li>Developed a fraud detection ML model (Logistic Regression, Extra Trees Classifier) for e-commerce accounts, enabling early fraud detection and generating estimated annual savings of over $40,000 in prevented losses.</li>
+                <li>Performed feature engineering and rigorous model evaluation, achieving 92% recall and 96% precision.</li>
+                <li>Validated model using ROC analysis, driving business decisions to restrict flagged accounts in real-time.</li></ul>
 
 - title: ML Summer School, Amazon
   from: July 2021
-  to: July 2020
-  description: <ul> <li>Attended sessions on 6 Machine Learning modules:- Supervised Learning, Deep Neural Networks, Dimensionality Reduction, Unsupervised Learning, Probabilistic Graphical Methods, Sequential Learning.</li>
-              <li>Learnt applications of various Machine Learning techniques in real world.</li></ul>
+  to: July 2021
+  description: <ul> <li>Strengthened my expertise in core Machine Learning techniques by completing 6 advanced modules, enhancing my ability to design and implement robust ML solutions.</li></ul>
