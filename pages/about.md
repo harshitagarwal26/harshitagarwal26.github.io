@@ -9,14 +9,13 @@ weight: 1
 
 Hey, there! I am **{{ site.author.name }}** <br>
 
-I am a graduate of BITS Pilani, currently working as a Software Engineer at Palo Alto Networks. During my time at college, I developed a deep interest in computer science and its applications, particularly in machine learning, cybersecurity, and systems programming. Both my research and industry experiences have played a key role in providing me with a solid foundation, helping me transform theoretical knowledge into practical solutions.
+I am currently pursuing my Master’s in Computer Sciences at the University of Wisconsin–Madison, after completing my undergraduate studies at BITS Pilani. Over the years, I have cultivated a strong interest in computer science, particularly in areas where technology meets real-world impact. My academic foundation, coupled with diverse professional experiences, has allowed me to bridge theory with practice and explore how technology can be harnessed to create secure, efficient, and scalable systems.
 
-My research internships have allowed me to delve into advanced topics like machine learning model robustness and the security of AI systems. These experiences not only sharpened my technical proficiency but also deepened my understanding of the vulnerabilites in machine learning systems and it's implications in real-world scenarios. I strongly believe that the future of AI depends on building systems that are both innovative and responsible, ensuring that these technologies are used securely. My industry experience at organizations like Palo Alto Networks has given me hands-on exposure to real-world applications, such as optimizing firewall systems and enhancing security protocols, further solidifying my ability to apply these principles in practice.
+My professional journey has given me the opportunity to work on projects spanning reliability, large-scale data systems, and intelligent automation. These experiences not only strengthened my technical expertise but also deepened my understanding of the challenges in building systems that are both robust and impactful. I strongly believe that technology must be designed with both innovation and responsibility in mind, ensuring that advancements lead to meaningful and secure outcomes.
 
-Throughout my academic and professional journey, I have worked on a range of projects that allowed me to apply my understanding of algorithms, data structures, and emerging technologies. These opportunities have reinforced my passion for creating impactful solutions and deepened my commitment to the secure use of technology.
+Throughout my academic and professional path, I have taken on projects that pushed me to apply my knowledge of algorithms, data systems, and software design to solve practical problems. These opportunities reinforced my passion for creating impactful solutions and furthered my commitment to leveraging technology responsibly.
 
-Outside of academics and work, I enjoy staying active and exploring new hobbies. I love hiking, traveling, and discovering new cuisines—especially when shared with friends. I’m always up for trying something new! I also enjoy reading novels, listening to music, and watching movies. If you’re interested in discussing tech, AI ethics, or just want to connect, feel free to reach out—I’d love to chat!
-
+Outside of academics and work, I enjoy staying active and exploring new experiences. I love hiking, traveling, and discovering new cuisines—especially when shared with friends. I’m always eager to try something new! I also enjoy reading, listening to music, and watching movies. If you’d like to chat about technology, innovation, or just connect, I’d be happy to!
 
 <!-- If you know how life works, mail me? -->
 
