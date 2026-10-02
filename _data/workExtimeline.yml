@@ -1,3 +1,9 @@
+- title: Analyst Intern, Netflix
+  from: May 2026
+  to: August 2026
+  description: <ul><li>Developed an ML-based bot detection service using isolation forest and ensemble scoring, achieving 97% accuracy.</li>
+                  <li>Improved detection of identity-spoofing bots by 4x during live attacks, strengthening existing fingerprint-based defenses.</li>
+                  <li>Extended fraud detection to previously unverified traffic, creating a reusable trust signal adopted across teams.</li></ul>
 
 - title: Software Engineer, Palo Alto Networks
   from: August 2023
