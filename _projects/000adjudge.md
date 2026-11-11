@@ -8,7 +8,8 @@ description: General-purpose AI judges stumble on text-heavy images. We built a 
 
 <div class="pp">
 
-<div class="pp-hero"><img src="/assets/img/adjudge-cover.jpg" alt="An ad being scanned for text and scored by a VLM judge"></div>
+<div class="pp-hero"><img src="/assets/img/adjudge-cover.jpg" alt="Digital billboards in Times Square at night"></div>
+<p class="text-muted text-right" style="font-size:.75rem;margin:-1.4rem 0 1.2rem;">Photo: <a class="text-muted" href="https://unsplash.com/photos/new-york-times-square-0_la3_Slfwk">Andrae Ricketts / Unsplash</a></p>
 
 <h1 class="pp-title">Ad-Judge</h1>
 <p class="pp-subtitle">Fine-Tuning Vision-Language Models for Text-Rich Digital Advertisement Evaluation</p>
