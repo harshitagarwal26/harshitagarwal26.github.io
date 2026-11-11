@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : harshit agarwal
 description         : >-
-                      Just a code ninja on a mission to make the digital world a little less buggy and a lot more fun!
+                      A curious mind passionate about turning ideas into reality, building things that matter, and having fun along the way
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 # repository          : YoussefRaafatNasry/portfolYOU     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -23,10 +23,10 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Harshit Agarwal
-  image             : /assets/img/me.jpg
+  image             : /assets/img/profile.jpg
 #  behance           : your_username
 # dribbble          : your_username
-  email             : haragarwal23@gmail.com
+  email             : harshitagarwal82@gmail.com
 #  facebook          : your_username
   github            : harshitagarwal26
 # gitlab            : your_username
