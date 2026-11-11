@@ -1,4 +1,5 @@
 ---
+order: 4
 name: Siamese Networks for One-shot Image Recognition
 tools: [Tensorflow, Python]
 image: /assets/img/snn0.png

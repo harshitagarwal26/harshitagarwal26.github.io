@@ -215,3 +215,20 @@
   }
   .pp-verdicts.pp-left { justify-content: flex-start; }
 }
+
+// Projects index: row-ordered grid (follows each project's `order:`)
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+
+  @media (max-width: 991px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 575px) { grid-template-columns: 1fr; }
+
+  > div { display: flex; }
+  .project.card {
+    margin: 0; width: 100%;
+    .card-img-top { height: 210px; object-fit: cover; }
+  }
+}

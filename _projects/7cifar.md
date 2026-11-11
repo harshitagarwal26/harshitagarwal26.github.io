@@ -1,4 +1,5 @@
 ---
+order: 6
 name: Image Classification on CIFAR-10
 tools: [Computer Vision, CNN, Classification, Tensorflow]
 image: /assets/img/cifar2.jpeg

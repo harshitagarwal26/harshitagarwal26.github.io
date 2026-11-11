@@ -1,4 +1,5 @@
 ---
+order: 3
 name: Satellite Image Recognition
 tools: [Python, Stanford CoreNLP API]
 image: /assets/img/stock2.jpg

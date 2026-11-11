@@ -1,4 +1,5 @@
 ---
+order: 2
 name: "Ad-Judge: Domain-Specific VLM for Digital Advertisement Evaluation"
 tools: [PyTorch, VLMs, Fine-tuning, LLaVA]
 image: /assets/img/adjudge-cover.jpg
