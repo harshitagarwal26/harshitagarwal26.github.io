@@ -1,74 +1,133 @@
 ---
 name: "Ad-Judge: Domain-Specific VLM for Digital Advertisement Evaluation"
 tools: [PyTorch, VLMs, Fine-tuning, LLaVA]
-image: /assets/img/adjudge-ad.png
-description: A vision-language model fine-tuned to judge text-rich digital ads using rubric-aligned scoring. Built a 1.5K-instance ad evaluation dataset and improved agreement with ground-truth judgments over Prometheus-Vision (Pearson 0.78 → 0.86).
+image: /assets/img/adjudge-cover.jpg
+description: General-purpose AI judges stumble on text-heavy images. We built a 1.5K-example ad dataset and fine-tuned a 7B vision-language model to grade ads more accurately, lifting Pearson correlation from 0.78 to 0.86.
 ---
-# Ad-Judge: Fine-Tuning Vision Language Models for Text-Rich Digital Advertisement Evaluation
-##### Advisor: <a href="https://pages.cs.wisc.edu/~fredsala/">Prof. Fred Sala</a>, Assistant Professor, Department of Computer Sciences, UW–Madison
 
-<br>
+<div class="pp">
 
-As vision-language models (VLMs) get more capable, evaluating their outputs becomes a bottleneck. Human evaluation is slow and expensive, and metrics like BLEU or ROUGE can't tell whether a response is actually grounded in the image. The **"VLM-as-a-Judge"** paradigm addresses this by having one model score another's responses against a rubric.
+<div class="pp-hero"><img src="/assets/img/adjudge-cover.jpg" alt="An ad being scanned for text and scored by a VLM judge"></div>
 
-The leading open-source judge, **Prometheus-Vision**, struggles on **text-rich images** like charts and diagrams. Digital ads are a hard case: they mix dense visual design with slogans, prices, disclaimers and fine print. A good ad judge needs to both *read* that text reliably and apply *marketing-specific* criteria. Our hypothesis was that a judge fine-tuned specifically on ads would agree with ground-truth judgments better than a general-purpose one.
+<h1 class="pp-title">Ad-Judge</h1>
+<p class="pp-subtitle">Fine-Tuning Vision-Language Models for Text-Rich Digital Advertisement Evaluation</p>
 
-<br>
+<div class="pp-meta">
+  <span><i class="fas fa-chalkboard-teacher"></i>Advisor: <a href="https://pages.cs.wisc.edu/~fredsala/">Prof. Fred Sala</a></span>
+  <span><i class="fas fa-university"></i>UW–Madison</span>
+  <span><i class="fas fa-users"></i>Team of 5</span>
+</div>
 
-### Dataset: Digital Advertisement Collection
+<div class="pp-actions">
+  <a class="btn btn-primary" href="https://github.com/harshitagarwal26/Ad-Judge-VLM/blob/main/Ad-Judge.pdf"><i class="fas fa-file-pdf"></i>Read the Paper</a>
+</div>
 
-We built a new dataset for training evaluator models, starting from the Ads16 dataset and following a pipeline similar to Prometheus-Vision's Perception Collection:
+<div class="pp-tldr">
+  <span class="pp-tldr-label">TL;DR</span>
+  AI models that grade other AI models struggle when an image is full of text. We built a dataset of ads and <b>fine-tuned a vision-language model to judge ads the way a marketer would</b>. It beat the best open-source judge.
+</div>
 
-<ul>
-  <li><b>Image filtration:</b> manually selected 52 text-dense ad creatives that require real reasoning, discarding screenshots and low-text images.</li>
-  <li><b>Seed rubrics:</b> hand-wrote fine-grained rubrics for 3 seed images, used as few-shot examples.</li>
-  <li><b>Expansion:</b> used Gemini 1.5 Pro to generate 3 rubrics per image and 2 instructions with reference answers per rubric (312 instructions).</li>
-  <li><b>Response and score synthesis:</b> for each instruction, generated 5 responses spanning scores 1–5, each with a feedback rationale.</li>
-</ul>
+<div class="pp-stats">
+  <div class="pp-stat"><span class="pp-num">0.78 → 0.86</span><span class="pp-label">Pearson correlation with ground truth</span></div>
+  <div class="pp-stat"><span class="pp-num">13%</span><span class="pp-label">lower mean absolute error</span></div>
+  <div class="pp-stat"><span class="pp-num">1,551</span><span class="pp-label">rubric-scored training examples</span></div>
+  <div class="pp-stat"><span class="pp-num">7B</span><span class="pp-label">parameters, fully fine-tuned</span></div>
+</div>
 
-The result is <b>1,551 instances</b>. Each one contains an image, instruction, response, score rubric, reference answer, feedback and score, with scores evenly balanced from 1 to 5.
+<h3 class="pp-h"><i class="fas fa-bullseye"></i>The problem</h3>
 
-<br>
+<p class="pp-lead"><b>"VLM-as-a-Judge"</b> uses one model to score another model's answers against a rubric. It's faster than human review and far smarter than BLEU or ROUGE. But the leading open judge, <b>Prometheus-Vision</b>, gets worse on text-heavy images, and ads are almost nothing <i>but</i> text and design.</p>
 
-### Fine-Tuning and Evaluation
+<div class="pp-grid">
+  <div class="pp-card">
+    <span class="pp-icon"><i class="fas fa-glasses"></i></span>
+    <h5>Can it read?</h5>
+    <p>Ads pack slogans, prices, disclaimers and fine print into busy layouts. The judge has to actually read all of it.</p>
+  </div>
+  <div class="pp-card">
+    <span class="pp-icon"><i class="fas fa-ad"></i></span>
+    <h5>Does it think like a marketer?</h5>
+    <p>Good ad evaluation means applying domain rubrics like offer accuracy, constraints and persuasion, not generic visual Q&amp;A.</p>
+  </div>
+</div>
 
-We fully fine-tuned **Prometheus-Vision 7B** (built on LLaVA-1.5) on the ad dataset. Following the Prometheus-Vision protocol, we measured agreement between the judge's scores and ground-truth scores using Pearson, Spearman, Kendall's Tau and Mean Absolute Error (MAE). Because the judge outputs a feedback rationale along with its score, every evaluation is explainable rather than a black box.
+<h3 class="pp-h"><i class="fas fa-database"></i>Building the dataset</h3>
 
-<br>
+<p class="pp-lead">Starting from the Ads16 dataset, we built a rubric-based training set using seed rubrics written by hand and generation with Gemini 1.5 Pro:</p>
 
-### Results
+<div class="pp-flow">
+  <div class="pp-flow-item"><span class="pp-num">52</span><span class="pp-label">text-dense ad images, hand-picked</span></div>
+  <div class="pp-flow-arrow"><i class="fas fa-chevron-right"></i></div>
+  <div class="pp-flow-item"><span class="pp-num">156</span><span class="pp-label">fine-grained scoring rubrics</span></div>
+  <div class="pp-flow-arrow"><i class="fas fa-chevron-right"></i></div>
+  <div class="pp-flow-item"><span class="pp-num">312</span><span class="pp-label">instructions + reference answers</span></div>
+  <div class="pp-flow-arrow"><i class="fas fa-chevron-right"></i></div>
+  <div class="pp-flow-item"><span class="pp-num">1,551</span><span class="pp-label">responses scored 1–5 with feedback</span></div>
+</div>
 
-On the full dataset (1,251 train / 300 test), the fine-tuned judge clearly outperformed the base model:
+<p>Each example includes the <b>image, instruction, response, rubric, reference answer, written feedback and score</b>, with scores evenly balanced from 1 to 5, so the judge learns to explain its grade, not just output a number.</p>
 
-| Model | Pearson | Spearman | Kendall | MAE |
-|:--|:--:|:--:|:--:|:--:|
-| **Prometheus-Vision 7B (fine-tuned, 5 epochs)** | **0.864** | **0.865** | **0.791** | 0.438 |
-| LLaVA 1.5 | 0.855 | 0.855 | 0.782 | 0.429 |
-| Prometheus-Vision 7B (base) | 0.779 | 0.776 | 0.712 | 0.502 |
-{: .table .table-sm}
+<h3 class="pp-h"><i class="fas fa-chart-line"></i>Results</h3>
 
-<ul>
-  <li>Pearson correlation improved from <b>0.78 to 0.86</b> over the base Prometheus-Vision judge, with lower MAE.</li>
-  <li>An earlier run on a smaller 908-sample split showed that training for 25 epochs <b>overfit</b> (Pearson dropped to 0.845), while 5 epochs gave the best results. Modest domain adaptation helps; over-training on little data hurts.</li>
-</ul>
+<p class="pp-lead">Fully fine-tuned <b>Prometheus-Vision 7B</b> (LLaVA-1.5 backbone) for 5 epochs and evaluated on 300 held-out examples:</p>
 
-<br>
+<table class="pp-table">
+  <thead><tr><th>Model</th><th>Pearson</th><th>Spearman</th><th>Kendall</th><th>MAE ↓</th></tr></thead>
+  <tbody>
+    <tr class="pp-best"><td>Ad-Judge (ours)</td><td>0.864</td><td>0.865</td><td>0.791</td><td>0.438</td></tr>
+    <tr><td>LLaVA 1.5</td><td>0.855</td><td>0.855</td><td>0.782</td><td>0.429</td></tr>
+    <tr><td>Prometheus-Vision 7B (base)</td><td>0.779</td><td>0.776</td><td>0.712</td><td>0.502</td></tr>
+  </tbody>
+</table>
 
-{% include elements/figure.html image="/assets/img/adjudge-ad.png" caption="Qualitative example: asked to extract the discount, product line and any restrictions, a response mentions “SAVE 20%” but misses “Online Only!”. The ground-truth score is 3. Ad-Judge correctly scores it 3; the base Prometheus-Vision gives an inflated 4." %}
+<div class="pp-grid">
+  <div class="pp-card">
+    <span class="pp-icon"><i class="fas fa-arrow-up"></i></span>
+    <h5>Domain data wins</h5>
+    <p>Fine-tuning on ads raised every correlation metric over the base Prometheus-Vision judge.</p>
+  </div>
+  <div class="pp-card">
+    <span class="pp-icon"><i class="fas fa-exclamation-triangle"></i></span>
+    <h5>Don't over-train</h5>
+    <p>On a smaller 908-example split, 25 epochs overfit (Pearson fell to 0.845), while 5 epochs did best.</p>
+  </div>
+</div>
 
-<br>
+<h3 class="pp-h"><i class="fas fa-search"></i>In action</h3>
 
-### Technical Details
-<ul>
-  <li>Language: Python</li>
-  <li>Framework: PyTorch</li>
-  <li>Models: Prometheus-Vision 7B, LLaVA-1.5</li>
-  <li>Methods: Full fine-tuning, synthetic data generation (Gemini 1.5 Pro), rubric-based VLM-as-a-Judge evaluation</li>
-  <li>Team project with Avil Aneja, Akshat Singhal, Shuorjo Aditya Chaudhuri and Omkar Shankar Khade</li>
-</ul>
+<div class="pp-split">
+  <figure class="pp-figure">
+    <div class="pp-frame"><img src="/assets/img/adjudge-ad.png" alt="Promotional banner used as an evaluation example"></div>
+  </figure>
+  <div class="pp-card">
+    <dl class="pp-qa">
+      <dt>Task</dt>
+      <dd>Extract the discount, the product line, and any restrictions.</dd>
+      <dt>Response</dt>
+      <dd>Found "SAVE 20%" and the winter wear, but <b>missed "Online Only!"</b>.</dd>
+      <dt>Verdict</dt>
+      <dd>
+        <div class="pp-verdicts pp-left">
+          <span>Truth: 3</span>
+          <span class="ok"><i class="fas fa-check"></i> Ad-Judge: 3</span>
+          <span class="bad"><i class="fas fa-times"></i> Base: 4</span>
+        </div>
+      </dd>
+    </dl>
+  </div>
+</div>
 
-<br>
+<p>Ad-Judge penalized the missing constraint, just as the rubric requires. The base model overlooked it and gave an inflated score.</p>
 
-<p class="text-center">
-{% include elements/button.html link="https://github.com/harshitagarwal26/Ad-Judge-VLM/blob/main/Ad-Judge.pdf" text="View Paper" %}
+<h3 class="pp-h"><i class="fas fa-tools"></i>Built with</h3>
+<div class="pp-chips">
+  <span>Python</span><span>PyTorch</span><span>Prometheus-Vision 7B</span><span>LLaVA-1.5</span><span>Gemini 1.5 Pro</span><span>Full fine-tuning</span><span>VLM-as-a-Judge</span>
+</div>
+
+<p class="text-muted" style="font-size:.9rem;">Team project with Avil Aneja, Akshat Singhal, Shuorjo Aditya Chaudhuri and Omkar Shankar Khade.</p>
+
+<p class="text-center pp-actions">
+  <a class="btn btn-outline-primary" href="https://github.com/harshitagarwal26/Ad-Judge-VLM/blob/main/Ad-Judge.pdf"><i class="fas fa-file-pdf"></i>Read the Paper</a>
 </p>
+
+</div>

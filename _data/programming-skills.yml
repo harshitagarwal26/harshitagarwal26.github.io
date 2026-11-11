@@ -7,9 +7,9 @@
   color: info
 
 - name: GoLang
-  percentage: 75
+  percentage: 90
   color: light
 
 - name: Java
-  percentage: 75
+  percentage: 90
   color: warning
